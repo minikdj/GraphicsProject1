@@ -34,5 +34,11 @@ class Plane : public Surface
 	/** Unit Vector that is perpendicular to the front face of the plane 
 	* (surface normal */
 	dvec3 n;
+
+};
+
+class SimplePolygon : public Plane
+{
+        SimplePolygon(std::vector<dvec3> vertices, const color & material): Plane(vertices[0], glm::normalize(glm::cross(vertices[0] - vertices[1], vertices[2] - vertices[1])), material) {}
 };
 
