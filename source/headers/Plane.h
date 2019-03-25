@@ -1,5 +1,5 @@
 #pragma once
-#include "surface.h"
+#include "Surface.h"
 
 /**
 * Sub-class of Surface that represents inplicit description of a plane.
@@ -39,6 +39,9 @@ class Plane : public Surface
 
 class SimplePolygon : public Plane
 {
-        SimplePolygon(std::vector<dvec3> vertices, const color & material): Plane(vertices[0], glm::normalize(glm::cross(vertices[0] - vertices[1], vertices[2] - vertices[1])), material) {}
+        public: 
+        
+        SimplePolygon(std::vector<dvec3> vertices, const color & material);
+        
 };
 

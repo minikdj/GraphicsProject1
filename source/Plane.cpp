@@ -16,6 +16,10 @@ Plane::Plane(std::vector<dvec3> vertices, const color & material)
 	n = glm::normalize(glm::cross(vertices[2] - vertices[1], vertices[0] - vertices[1]));
 }
 
+SimplePolygon::SimplePolygon(std::vector<dvec3> vertices, const color & material)
+    : Plane(vertices, material)
+{
+}
 
 /*
 * Checks a ray for intersection with the surface. Finds the closest point of intersection

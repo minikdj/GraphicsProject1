@@ -63,8 +63,8 @@ Defines.h
 ../source/headers/Defines.h
 
 ../source/headers/Plane.h
-surface.h
-../source/headers/surface.h
+Surface.h
+../source/headers/Surface.h
 
 ../source/headers/RasterUser.h
 time.h
@@ -97,14 +97,6 @@ Surface.h
 ../source/headers/Surface.h
 
 ../source/headers/Surface.h
-HitRecord.h
-../source/headers/HitRecord.h
-Ray.h
-../source/headers/Ray.h
-Material.h
-../source/headers/Material.h
-
-../source/headers/surface.h
 HitRecord.h
 ../source/headers/HitRecord.h
 Ray.h

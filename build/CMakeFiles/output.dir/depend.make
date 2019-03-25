@@ -750,7 +750,7 @@ CMakeFiles/output.dir/source/Plane.cpp.o: ../source/headers/HitRecord.h
 CMakeFiles/output.dir/source/Plane.cpp.o: ../source/headers/Material.h
 CMakeFiles/output.dir/source/Plane.cpp.o: ../source/headers/Plane.h
 CMakeFiles/output.dir/source/Plane.cpp.o: ../source/headers/Ray.h
-CMakeFiles/output.dir/source/Plane.cpp.o: ../source/headers/surface.h
+CMakeFiles/output.dir/source/Plane.cpp.o: ../source/headers/Surface.h
 CMakeFiles/output.dir/source/Plane.cpp.o: ../source/Plane.cpp
 CMakeFiles/output.dir/source/Plane.cpp.o: /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_noise.hpp
 CMakeFiles/output.dir/source/Plane.cpp.o: /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_vectorize.hpp
@@ -1130,7 +1130,6 @@ CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Ray.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/RayTracer.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Sphere.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Surface.h
-CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/surface.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/RasterUser.cpp
 CMakeFiles/output.dir/source/RasterUser.cpp.o: /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_noise.hpp
 CMakeFiles/output.dir/source/RasterUser.cpp.o: /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_vectorize.hpp
