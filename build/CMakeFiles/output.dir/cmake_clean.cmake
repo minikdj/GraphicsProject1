@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/output.dir/source/Defines.cpp.o"
   "CMakeFiles/output.dir/source/FrameBuffer.cpp.o"
   "CMakeFiles/output.dir/source/Plane.cpp.o"
+  "CMakeFiles/output.dir/source/QuadricSurface.cpp.o"
   "CMakeFiles/output.dir/source/RasterUser.cpp.o"
   "CMakeFiles/output.dir/source/RayTracer.cpp.o"
   "CMakeFiles/output.dir/source/Sphere.cpp.o"

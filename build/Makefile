@@ -204,6 +204,33 @@ source/Plane.cpp.s:
 	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Plane.cpp.s
 .PHONY : source/Plane.cpp.s
 
+source/QuadricSurface.o: source/QuadricSurface.cpp.o
+
+.PHONY : source/QuadricSurface.o
+
+# target to build an object file
+source/QuadricSurface.cpp.o:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/QuadricSurface.cpp.o
+.PHONY : source/QuadricSurface.cpp.o
+
+source/QuadricSurface.i: source/QuadricSurface.cpp.i
+
+.PHONY : source/QuadricSurface.i
+
+# target to preprocess a source file
+source/QuadricSurface.cpp.i:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/QuadricSurface.cpp.i
+.PHONY : source/QuadricSurface.cpp.i
+
+source/QuadricSurface.s: source/QuadricSurface.cpp.s
+
+.PHONY : source/QuadricSurface.s
+
+# target to generate assembly for a file
+source/QuadricSurface.cpp.s:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/QuadricSurface.cpp.s
+.PHONY : source/QuadricSurface.cpp.s
+
 source/RasterUser.o: source/RasterUser.cpp.o
 
 .PHONY : source/RasterUser.o
@@ -330,6 +357,9 @@ help:
 	@echo "... source/Plane.o"
 	@echo "... source/Plane.i"
 	@echo "... source/Plane.s"
+	@echo "... source/QuadricSurface.o"
+	@echo "... source/QuadricSurface.i"
+	@echo "... source/QuadricSurface.s"
 	@echo "... source/RasterUser.o"
 	@echo "... source/RasterUser.i"
 	@echo "... source/RasterUser.s"

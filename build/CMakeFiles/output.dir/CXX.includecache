@@ -66,6 +66,10 @@ Defines.h
 Surface.h
 ../source/headers/Surface.h
 
+../source/headers/QuadricSurface.h
+Surface.h
+../source/headers/Surface.h
+
 ../source/headers/RasterUser.h
 time.h
 -
@@ -104,13 +108,39 @@ Ray.h
 Material.h
 ../source/headers/Material.h
 
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Defines.cpp
+Defines.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Defines.h
+iomanip
+-
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/FrameBuffer.cpp
+FrameBuffer.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/FrameBuffer.h
+
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Plane.cpp
 Plane.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Plane.h
 
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/QuadricSurface.cpp
+QuadricSurface.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/QuadricSurface.h
+
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.cpp
 RasterUser.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RayTracer.cpp
+RayTracer.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RayTracer.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Sphere.cpp
+Sphere.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Sphere.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Surface.cpp
+Surface.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Surface.h
 
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_noise.hpp
 ../common.hpp

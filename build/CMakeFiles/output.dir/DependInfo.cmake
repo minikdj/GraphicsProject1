@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Defines.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/Defines.cpp.o"
   "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/FrameBuffer.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/FrameBuffer.cpp.o"
   "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Plane.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/Plane.cpp.o"
+  "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/QuadricSurface.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/QuadricSurface.cpp.o"
   "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/RasterUser.cpp.o"
   "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RayTracer.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/RayTracer.cpp.o"
   "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Sphere.cpp" "/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles/output.dir/source/Sphere.cpp.o"
