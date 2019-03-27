@@ -165,11 +165,13 @@ HitRecord QuadricSurface::findClosestIntersection( const Ray & ray )
 HitRecord Ellipsoid::findClosestIntersection(const Ray & ray) 
 {
     HitRecord hr = QuadricSurface::findClosestIntersection(ray);
+    // TODO
     return hr;
 }
 
 HitRecord Cylinder::findClosestIntersection(const Ray & ray) 
 {
     HitRecord hr = QuadricSurface::findClosestIntersection(ray);
+    // TODO
     return hr;
 }
