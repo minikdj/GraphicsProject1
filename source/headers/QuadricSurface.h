@@ -66,6 +66,7 @@ class Ellipsoid : public QuadricSurface
 class Cylinder : public QuadricSurface
 {
     public:
+    double radius, length;
 
     Cylinder(const dvec3 & position, const color & mat, double radius, double length);
     Cylinder(const dvec3 & position, const Material & mat, double radius, double length);

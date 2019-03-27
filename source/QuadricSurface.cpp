@@ -47,19 +47,19 @@ QuadricSurface::QuadricSurface( const dvec3 & position, const Material & mat )
 {}
 
 Ellipsoid::Ellipsoid(const dvec3 & position, const color & mat, double a, double b, double c)
-    : QuadricSurface(position, mat)
+    : QuadricSurface(position, mat), a(a), b(b), c(c)
 {}
 
 Ellipsoid::Ellipsoid(const dvec3 & position, const Material & mat, double a, double b, double c)
-    : QuadricSurface(position, mat)
+    : QuadricSurface(position, mat), a(a), b(b), c(c)
 {}
 
 Cylinder::Cylinder(const dvec3 & position, const color & mat, double radius, double length)
-    : QuadricSurface(position, mat)
+    : QuadricSurface(position, mat), radius(radius), length(length)
 {}
 
 Cylinder::Cylinder(const dvec3 & position, const Material & mat, double radius, double length)
-    : QuadricSurface(position, mat)
+    : QuadricSurface(position, mat), radius(radius), length(length)
 {}
 
 /*
