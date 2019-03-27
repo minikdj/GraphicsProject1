@@ -35,7 +35,7 @@ public:
 	* @param rayDirection - Unit vector represention the direction of the ray.
 	* returns HitRecord containing intormation about the point of intersection.
 	*/
-	virtual HitRecord findClosestIntersection( const Ray & ray ) override;
+	virtual HitRecord findClosestIntersection( const Ray & ray );
 
 	/**
 	* xyz location of the center of the surface
@@ -71,3 +71,4 @@ class Cylinder : public QuadricSurface
     Cylinder(const dvec3 & position, const Material & mat, double radius, double length);
     HitRecord findClosestIntersection(const Ray & ray) override;
 };
+

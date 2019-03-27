@@ -46,12 +46,28 @@ QuadricSurface::QuadricSurface( const dvec3 & position, const Material & mat )
 	: Surface( mat ), center( position )
 {}
 
+Ellipsoid::Ellipsoid(const dvec3 & position, const color & mat, double a, double b, double c)
+    : QuadricSurface(position, mat)
+{}
+
+Ellipsoid::Ellipsoid(const dvec3 & position, const Material & mat, double a, double b, double c)
+    : QuadricSurface(position, mat)
+{}
+
+Cylinder::Cylinder(const dvec3 & position, const color & mat, double radius, double length)
+    : QuadricSurface(position, mat)
+{}
+
+Cylinder::Cylinder(const dvec3 & position, const Material & mat, double radius, double length)
+    : QuadricSurface(position, mat)
+{}
+
 /*
 * Checks a ray for intersection with the surface. Finds the closest point of intersection
 * if one exits. Returns a HitRecord with the t parmeter set to FLT_MAX if there is no
 * intersection.
 */
-HitRecord QuadricSurface::findClosestIntersection( const Ray & ray )
+HitRecord QuadricSurface::findClosestIntersection( const Ray & ray ) 
 {
 	HitRecord hitRecord; 
 
@@ -146,3 +162,14 @@ HitRecord QuadricSurface::findClosestIntersection( const Ray & ray )
 
 } // end checkIntercept
 
+HitRecord Ellipsoid::findClosestIntersection(const Ray & ray) 
+{
+    HitRecord hr = QuadricSurface::findClosestIntersection(ray);
+    return hr;
+}
+
+HitRecord Cylinder::findClosestIntersection(const Ray & ray) 
+{
+    HitRecord hr = QuadricSurface::findClosestIntersection(ray);
+    return hr;
+}
