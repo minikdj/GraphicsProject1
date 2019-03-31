@@ -123,6 +123,33 @@ output/fast:
 	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/build
 .PHONY : output/fast
 
+source/Cylinder.o: source/Cylinder.cpp.o
+
+.PHONY : source/Cylinder.o
+
+# target to build an object file
+source/Cylinder.cpp.o:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Cylinder.cpp.o
+.PHONY : source/Cylinder.cpp.o
+
+source/Cylinder.i: source/Cylinder.cpp.i
+
+.PHONY : source/Cylinder.i
+
+# target to preprocess a source file
+source/Cylinder.cpp.i:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Cylinder.cpp.i
+.PHONY : source/Cylinder.cpp.i
+
+source/Cylinder.s: source/Cylinder.cpp.s
+
+.PHONY : source/Cylinder.s
+
+# target to generate assembly for a file
+source/Cylinder.cpp.s:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Cylinder.cpp.s
+.PHONY : source/Cylinder.cpp.s
+
 source/Defines.o: source/Defines.cpp.o
 
 .PHONY : source/Defines.o
@@ -149,6 +176,33 @@ source/Defines.s: source/Defines.cpp.s
 source/Defines.cpp.s:
 	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Defines.cpp.s
 .PHONY : source/Defines.cpp.s
+
+source/Ellipsoid.o: source/Ellipsoid.cpp.o
+
+.PHONY : source/Ellipsoid.o
+
+# target to build an object file
+source/Ellipsoid.cpp.o:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Ellipsoid.cpp.o
+.PHONY : source/Ellipsoid.cpp.o
+
+source/Ellipsoid.i: source/Ellipsoid.cpp.i
+
+.PHONY : source/Ellipsoid.i
+
+# target to preprocess a source file
+source/Ellipsoid.cpp.i:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Ellipsoid.cpp.i
+.PHONY : source/Ellipsoid.cpp.i
+
+source/Ellipsoid.s: source/Ellipsoid.cpp.s
+
+.PHONY : source/Ellipsoid.s
+
+# target to generate assembly for a file
+source/Ellipsoid.cpp.s:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/Ellipsoid.cpp.s
+.PHONY : source/Ellipsoid.cpp.s
 
 source/FrameBuffer.o: source/FrameBuffer.cpp.o
 
@@ -285,6 +339,33 @@ source/RayTracer.cpp.s:
 	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/RayTracer.cpp.s
 .PHONY : source/RayTracer.cpp.s
 
+source/SimplePolygon.o: source/SimplePolygon.cpp.o
+
+.PHONY : source/SimplePolygon.o
+
+# target to build an object file
+source/SimplePolygon.cpp.o:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/SimplePolygon.cpp.o
+.PHONY : source/SimplePolygon.cpp.o
+
+source/SimplePolygon.i: source/SimplePolygon.cpp.i
+
+.PHONY : source/SimplePolygon.i
+
+# target to preprocess a source file
+source/SimplePolygon.cpp.i:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/SimplePolygon.cpp.i
+.PHONY : source/SimplePolygon.cpp.i
+
+source/SimplePolygon.s: source/SimplePolygon.cpp.s
+
+.PHONY : source/SimplePolygon.s
+
+# target to generate assembly for a file
+source/SimplePolygon.cpp.s:
+	$(MAKE) -f CMakeFiles/output.dir/build.make CMakeFiles/output.dir/source/SimplePolygon.cpp.s
+.PHONY : source/SimplePolygon.cpp.s
+
 source/Sphere.o: source/Sphere.cpp.o
 
 .PHONY : source/Sphere.o
@@ -348,9 +429,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... output"
+	@echo "... source/Cylinder.o"
+	@echo "... source/Cylinder.i"
+	@echo "... source/Cylinder.s"
 	@echo "... source/Defines.o"
 	@echo "... source/Defines.i"
 	@echo "... source/Defines.s"
+	@echo "... source/Ellipsoid.o"
+	@echo "... source/Ellipsoid.i"
+	@echo "... source/Ellipsoid.s"
 	@echo "... source/FrameBuffer.o"
 	@echo "... source/FrameBuffer.i"
 	@echo "... source/FrameBuffer.s"
@@ -366,6 +453,9 @@ help:
 	@echo "... source/RayTracer.o"
 	@echo "... source/RayTracer.i"
 	@echo "... source/RayTracer.s"
+	@echo "... source/SimplePolygon.o"
+	@echo "... source/SimplePolygon.i"
+	@echo "... source/SimplePolygon.s"
 	@echo "... source/Sphere.o"
 	@echo "... source/Sphere.i"
 	@echo "... source/Sphere.s"

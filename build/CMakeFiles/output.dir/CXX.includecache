@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../source/headers/Cylinder.h
+QuadricSurface.h
+../source/headers/QuadricSurface.h
+
 ../source/headers/Defines.h
 iostream
 -
@@ -35,6 +39,10 @@ glm/gtx/quaternion.hpp
 -
 glm/gtx/euler_angles.hpp
 -
+
+../source/headers/Ellipsoid.h
+QuadricSurface.h
+../source/headers/QuadricSurface.h
 
 ../source/headers/FrameBuffer.h
 Defines.h
@@ -96,6 +104,10 @@ Surface.h
 Ray.h
 ../source/headers/Ray.h
 
+../source/headers/SimplePolygon.h
+Plane.h
+../source/headers/Plane.h
+
 ../source/headers/Sphere.h
 Surface.h
 ../source/headers/Surface.h
@@ -108,6 +120,24 @@ Ray.h
 Material.h
 ../source/headers/Material.h
 
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Cylinder.cpp
+Cylinder.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Cylinder.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Defines.cpp
+Defines.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Defines.h
+iomanip
+-
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Ellipsoid.cpp
+Ellipsoid.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Ellipsoid.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/FrameBuffer.cpp
+FrameBuffer.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/FrameBuffer.h
+
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Plane.cpp
 Plane.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Plane.h
@@ -119,6 +149,22 @@ QuadricSurface.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.cpp
 RasterUser.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RayTracer.cpp
+RayTracer.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RayTracer.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/SimplePolygon.cpp
+SimplePolygon.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/SimplePolygon.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Sphere.cpp
+Sphere.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Sphere.h
+
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Surface.cpp
+Surface.h
+/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Surface.h
 
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_noise.hpp
 ../common.hpp
