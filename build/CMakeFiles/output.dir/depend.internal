@@ -2244,15 +2244,19 @@ CMakeFiles/output.dir/source/QuadricSurface.cpp.o
  /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/vec4.hpp
  /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/vector_relational.hpp
 CMakeFiles/output.dir/source/RasterUser.cpp.o
+ ../source/headers/Cylinder.h
  ../source/headers/Defines.h
+ ../source/headers/Ellipsoid.h
  ../source/headers/FrameBuffer.h
  ../source/headers/HitRecord.h
  ../source/headers/Lights.h
  ../source/headers/Material.h
  ../source/headers/Plane.h
+ ../source/headers/QuadricSurface.h
  ../source/headers/RasterUser.h
  ../source/headers/Ray.h
  ../source/headers/RayTracer.h
+ ../source/headers/SimplePolygon.h
  ../source/headers/Sphere.h
  ../source/headers/Surface.h
  /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.cpp

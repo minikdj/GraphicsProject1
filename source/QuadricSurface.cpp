@@ -18,8 +18,8 @@ QuadricSurface::QuadricSurface( const dvec3 & position, const color & mat )
     
     // Cylinder
 	A = 0;
-	B = 1/9.0;
-	C = 1/9.0;
+	B = 1/1.0;
+	C = 1/1.0;
 	D = 0;
 	E = 0;
 	F = 0;

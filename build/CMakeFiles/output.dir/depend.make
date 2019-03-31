@@ -2243,15 +2243,19 @@ CMakeFiles/output.dir/source/QuadricSurface.cpp.o: /Users/danminik/Desktop/Schoo
 CMakeFiles/output.dir/source/QuadricSurface.cpp.o: /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/vec4.hpp
 CMakeFiles/output.dir/source/QuadricSurface.cpp.o: /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/vector_relational.hpp
 
+CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Cylinder.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Defines.h
+CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Ellipsoid.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/FrameBuffer.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/HitRecord.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Lights.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Material.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Plane.h
+CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/QuadricSurface.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/RasterUser.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Ray.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/RayTracer.h
+CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/SimplePolygon.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Sphere.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/headers/Surface.h
 CMakeFiles/output.dir/source/RasterUser.cpp.o: ../source/RasterUser.cpp

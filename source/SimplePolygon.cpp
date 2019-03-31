@@ -1,7 +1,7 @@
 #include "SimplePolygon.h"
 
 
-SimplePolygon::SimplePolygon(std::vector<dvec3> vertices, const color & material)
+SimplePolygon::SimplePolygon(std::vector<dvec3> vertices, const dvec3 & normal, const color & material)
     : Plane(vertices, material)
 {
 }

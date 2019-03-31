@@ -6,6 +6,10 @@
 #include "RayTracer.h"
 #include "Sphere.h"
 #include "Plane.h"
+#include "Cylinder.h"
+#include "Ellipsoid.h"
+#include "QuadricSurface.h"
+#include "SimplePolygon.h"
 
 /**
 * Acts as the display function for the window. 
