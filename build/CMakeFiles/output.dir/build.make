@@ -148,9 +148,22 @@ CMakeFiles/output.dir/source/RasterUser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/source/RasterUser.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.cpp -o CMakeFiles/output.dir/source/RasterUser.cpp.s
 
+CMakeFiles/output.dir/source/Ray.cpp.o: CMakeFiles/output.dir/flags.make
+CMakeFiles/output.dir/source/Ray.cpp.o: ../source/Ray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/output.dir/source/Ray.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/source/Ray.cpp.o -c /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Ray.cpp
+
+CMakeFiles/output.dir/source/Ray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/output.dir/source/Ray.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Ray.cpp > CMakeFiles/output.dir/source/Ray.cpp.i
+
+CMakeFiles/output.dir/source/Ray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/output.dir/source/Ray.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Ray.cpp -o CMakeFiles/output.dir/source/Ray.cpp.s
+
 CMakeFiles/output.dir/source/RayTracer.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/source/RayTracer.cpp.o: ../source/RayTracer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/output.dir/source/RayTracer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/output.dir/source/RayTracer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/source/RayTracer.cpp.o -c /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RayTracer.cpp
 
 CMakeFiles/output.dir/source/RayTracer.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/output.dir/source/RayTracer.cpp.s: cmake_force
 
 CMakeFiles/output.dir/source/SimplePolygon.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/source/SimplePolygon.cpp.o: ../source/SimplePolygon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/output.dir/source/SimplePolygon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/output.dir/source/SimplePolygon.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/source/SimplePolygon.cpp.o -c /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/SimplePolygon.cpp
 
 CMakeFiles/output.dir/source/SimplePolygon.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/output.dir/source/SimplePolygon.cpp.s: cmake_force
 
 CMakeFiles/output.dir/source/Sphere.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/source/Sphere.cpp.o: ../source/Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/output.dir/source/Sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/output.dir/source/Sphere.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/source/Sphere.cpp.o -c /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Sphere.cpp
 
 CMakeFiles/output.dir/source/Sphere.cpp.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/output.dir/source/Sphere.cpp.s: cmake_force
 
 CMakeFiles/output.dir/source/Surface.cpp.o: CMakeFiles/output.dir/flags.make
 CMakeFiles/output.dir/source/Surface.cpp.o: ../source/Surface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/output.dir/source/Surface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/output.dir/source/Surface.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/output.dir/source/Surface.cpp.o -c /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Surface.cpp
 
 CMakeFiles/output.dir/source/Surface.cpp.i: cmake_force
@@ -209,6 +222,7 @@ output_OBJECTS = \
 "CMakeFiles/output.dir/source/Plane.cpp.o" \
 "CMakeFiles/output.dir/source/QuadricSurface.cpp.o" \
 "CMakeFiles/output.dir/source/RasterUser.cpp.o" \
+"CMakeFiles/output.dir/source/Ray.cpp.o" \
 "CMakeFiles/output.dir/source/RayTracer.cpp.o" \
 "CMakeFiles/output.dir/source/SimplePolygon.cpp.o" \
 "CMakeFiles/output.dir/source/Sphere.cpp.o" \
@@ -224,13 +238,14 @@ output: CMakeFiles/output.dir/source/FrameBuffer.cpp.o
 output: CMakeFiles/output.dir/source/Plane.cpp.o
 output: CMakeFiles/output.dir/source/QuadricSurface.cpp.o
 output: CMakeFiles/output.dir/source/RasterUser.cpp.o
+output: CMakeFiles/output.dir/source/Ray.cpp.o
 output: CMakeFiles/output.dir/source/RayTracer.cpp.o
 output: CMakeFiles/output.dir/source/SimplePolygon.cpp.o
 output: CMakeFiles/output.dir/source/Sphere.cpp.o
 output: CMakeFiles/output.dir/source/Surface.cpp.o
 output: CMakeFiles/output.dir/build.make
 output: CMakeFiles/output.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable output"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable output"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/output.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

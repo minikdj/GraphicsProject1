@@ -77,14 +77,9 @@ void RayTracer::raytraceScene(const SurfaceVector & surfaces, const LightVector 
 
 color RayTracer::traceIndividualRay(const Ray & viewRay, int recursionLevel)
 {
-	// Find surface intersection that is closest to 'e' in the direction 'd.'
     HitRecord closest = HitRecord();
-    for( auto surface : surfacesInScene ) {
-        HitRecord hr = surface->findClosestIntersection(viewRay);
-        if (hr.t != FLT_MAX) {
-            closest = hr;
-        }
-    }
+    closest = findIntersection(viewRay, surfacesInScene);
+
     if (closest.t < FLT_MAX) {
         color total = BLACK;
         for (auto light : lightsInScene) {

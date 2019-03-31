@@ -1,8 +1,7 @@
 #pragma once
 
 #include "Defines.h"
-
-
+#include "HitRecord.h"
 /**
 * Simple struct that represents a ray.
 */
@@ -16,4 +15,6 @@ struct Ray
 	{
 	}
 
+    HitRecord findIntersection( const Ray & ray, const SurfaceVector & surfaces );
+    
 };
