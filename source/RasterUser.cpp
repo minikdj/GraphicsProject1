@@ -136,16 +136,16 @@ void buildScene()
     Material redMat(RED);
     redMat.emissiveColor = .03 * RED;
 
-    shared_ptr<Ellipsoid> ellipsoid = make_shared<Ellipsoid>(dvec3(0.0, 0.0, -10.0), RED, 1, 2, 2);
-    //shared_ptr<Cylinder> cylinder = make_shared<Cylinder>(dvec3(0.0, 0.0, -10.0), RED, 1, 10 );
+    //shared_ptr<Ellipsoid> ellipsoid = make_shared<Ellipsoid>(dvec3(0.0, 0.0, -10.0), RED, 1, 2, 2);
+    shared_ptr<Cylinder> cylinder = make_shared<Cylinder>(dvec3(0.0, 0.0, -10.0), RED, 1, 10 );
 	//shared_ptr<Sphere> redBall = make_shared<Sphere>(dvec3( 0.0, 0.0, -10.0 ), 1.5, RED);
 	//shared_ptr<Sphere> blueBall = make_shared<Sphere>(dvec3( 2.0, 0.5, -10.0 ), 1.0, BLUE);
 	//shared_ptr<Sphere> greenBall = make_shared<Sphere>(dvec3( -1.8, 0.0, -10.0 ), 0.5, GREEN);
 	//shared_ptr<Plane> plane = make_shared<Plane>(dvec3(0, -20.0, 0.0), dvec3(0, 1, 0), WHITE);
     //redBall->material = redMat;
 
-    surfaces.push_back(ellipsoid);
-    //surfaces.push_back(cylinder);
+    //surfaces.push_back(ellipsoid);
+    surfaces.push_back(cylinder);
     //surfaces.push_back(plane);
 	//surfaces.push_back(redBall);
 	//surfaces.push_back(blueBall);
