@@ -6,6 +6,7 @@ CMakeFiles/output.dir/source/Cylinder.cpp.o
  ../source/headers/Defines.h
  ../source/headers/HitRecord.h
  ../source/headers/Material.h
+ ../source/headers/Plane.h
  ../source/headers/QuadricSurface.h
  ../source/headers/Ray.h
  ../source/headers/Surface.h
