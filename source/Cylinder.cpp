@@ -18,10 +18,10 @@ HitRecord Cylinder::findClosestIntersection(const Ray & ray)
     }
 
     // if the dot product of n and direction is < 0, we're on the back side of the cylinder and need to invert the normal
-    if (glm::dot(hr.surfaceNormal, ray.direct) < 0) 
-    {
-        hr.surfaceNormal = (-1.0) * hr.surfaceNormal;
-    }
+   // if (glm::dot(hr.surfaceNormal, ray.direct) < 0) 
+   // {
+      // hr.surfaceNormal = (-1.0) * hr.surfaceNormal;
+   // }
 
     float tmp = glm::length(hr.interceptPoint - center);
 

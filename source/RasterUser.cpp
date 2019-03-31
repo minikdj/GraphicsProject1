@@ -136,20 +136,20 @@ void buildScene()
     Material redMat(RED);
     redMat.emissiveColor = .03 * RED;
 
-    //shared_ptr<Ellipsoid> ellipsoid = make_shared<Ellipsoid>(dvec3(0.0, 0.0, -10.0), RED, 1, 2, 2);
-    shared_ptr<Cylinder> cylinder = make_shared<Cylinder>(dvec3(2.0, 0.0, -10.0), RED, 1, 2 );
-	//shared_ptr<Sphere> redBall = make_shared<Sphere>(dvec3( 0.0, 0.0, -10.0 ), 1.5, RED);
-	//shared_ptr<Sphere> blueBall = make_shared<Sphere>(dvec3( 2.0, 0.5, -10.0 ), 1.0, BLUE);
-	//shared_ptr<Sphere> greenBall = make_shared<Sphere>(dvec3( -1.8, 0.0, -10.0 ), 0.5, GREEN);
-	//shared_ptr<Plane> plane = make_shared<Plane>(dvec3(0, -20.0, 0.0), dvec3(0, 1, 0), WHITE);
-    //redBall->material = redMat;
-
-    //surfaces.push_back(ellipsoid);
-    surfaces.push_back(cylinder);
-    //surfaces.push_back(plane);
-	//surfaces.push_back(redBall);
-	//surfaces.push_back(blueBall);
-	//surfaces.push_back(greenBall);
+    shared_ptr<Ellipsoid> ellipsoid = make_shared<Ellipsoid>(dvec3(-3.0, 0.0, -10.0), BLACK, 1, 2, 2);
+    shared_ptr<Cylinder> cylinder = make_shared<Cylinder>(dvec3(2.7, 1.0, -10.0), GREEN, 1, 2 );
+	shared_ptr<Sphere> redBall = make_shared<Sphere>(dvec3( 0.0, 0.0, -10.0 ), 1.5, RED);
+	shared_ptr<Sphere> blueBall = make_shared<Sphere>(dvec3( -2.0, 1.0, -10.0 ), 0.5, BLUE);
+	shared_ptr<Sphere> whiteBall = make_shared<Sphere>(dvec3( -1.8, -1.0, -10.0 ), 0.5, WHITE);
+	shared_ptr<Plane> plane = make_shared<Plane>(dvec3(0, -20.0, 0.0), dvec3(0, 1, 0), WHITE);
+    redBall->material = redMat;
+    
+    surfaces.push_back(plane);
+    surfaces.push_back(ellipsoid);
+	surfaces.push_back(whiteBall);
+	surfaces.push_back(blueBall);
+	surfaces.push_back(redBall);
+    surfaces.push_back(cylinder); 
     
     ambientLight = make_shared<LightSource>(BLACK);
     ambientLight->ambientLightColor = color(0.15, 0.15, 0.15, 1.0);
