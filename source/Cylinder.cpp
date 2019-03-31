@@ -33,14 +33,13 @@ HitRecord Cylinder::findClosestIntersection(const Ray & ray)
         newRay.direct = ray.direct;
 
         HitRecord newHR = Cylinder::findClosestIntersection(newRay);
-       
+        tmp = glm::length(newHR.interceptPoint - center);
+
         if (pow(tmp, 2) - pow(radius, 2) < pow(length / 2, 2))
         {
             return newHR;
-        }
-
+        } 
     }
 
-    
     return hr;
 }
