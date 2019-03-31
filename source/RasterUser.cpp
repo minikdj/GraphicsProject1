@@ -23,6 +23,9 @@ shared_ptr<DirectionalLight> lightDir;
 
 shared_ptr<Spotlight> spotlight;
 
+// boolean to keep track of it being day or night
+bool isNight = false;
+
 /**
 * Acts as the display function for the window. 
 */
@@ -64,6 +67,26 @@ static void ResizeCB(int width, int height)
 
 } // end ResizeCB
 
+void switchTimeOfDay(char c)
+{
+    ambientLight->enabled = true;
+    lightPos->enabled = true;
+    lightDir->enabled = true;
+    spotlight->enabled = true;
+
+    ambientLight->ambientLightColor = color(0.15, 0.15, 0.15, 1.0);
+	lightPos->diffuseLightColor = color(1.0, 1.0, 1.0, 1);
+	lightDir->diffuseLightColor = color(0.75, 0.75, 0.75, 1);
+    spotlight->diffuseLightColor = color(0.75, 0.75, 0.75, 1.0);
+ 
+    if (c == 'n')
+    {
+        ambientLight->ambientLightColor =  ambientLight->ambientLightColor * 0.0002;
+        lightPos->diffuseLightColor = lightPos->diffuseLightColor * 0.0002;
+        lightDir->diffuseLightColor = lightDir->diffuseLightColor * 0.0002;
+        spotlight->enabled = false; 
+    } 
+}
 
 // Responds to 'f' and escape keys. 'f' key allows 
 // toggling full screen viewing. Escape key ends the
@@ -81,12 +104,22 @@ static void KeyboardCB(unsigned char key, int x, int y)
 		break;
     case('a'):
         ambientLight->enabled = ambientLight->enabled ? false : true;
+        break;
     case('p'):
         lightPos->enabled = lightPos->enabled ? false : true;
+        break;
     case('d'):
         lightDir->enabled = lightDir->enabled ? false : true;
+        break;
     case('s'):
         spotlight->enabled = spotlight->enabled ? false : true;
+        break;
+    case('m'):
+       switchTimeOfDay('m');
+       break;
+    case('n'):
+        switchTimeOfDay('n');
+        break;
     case('1') :
         rayTrace.setRecursionDepth( 1 );
         break;
@@ -161,7 +194,6 @@ void buildScene()
     ambientLight->ambientLightColor = color(0.15, 0.15, 0.15, 1.0);
 	lightPos = make_shared<PositionalLight>(dvec3(-10.0, 10.0, 10.0), color(1.0, 1.0, 1.0, 1));
 	lightDir = make_shared<DirectionalLight>(dvec3(-10.0,10.0 ,-10.0), color(0.75, 0.75, 0.75, 1));
-
     spotlight = make_shared<Spotlight>(dvec3(500, 1000, -10), dvec3(0,-1,0), glm::cos(glm::radians(15.0)), color(0.75, 0.75, 0.75, 1.0));
 
     lights.push_back(spotlight);
