@@ -28,6 +28,19 @@ QuadricSurface::QuadricSurface( const dvec3 & position, const color & mat )
 	I = 0;
 	J = -1;
 
+    // Ellipsoid
+    // a = 2, b = 3, c = 3, centroid (position) = <0,0,0>
+    // A = 1/4.0;
+    // B = 1/9.0;
+    // C = 1/9.0;
+    // D = 0;
+    // E = 0;
+    // F = 0;
+    // G = 0;
+    // H = 0;
+    // I = 0;
+    // J = -1;
+
 	// Paraboloid
 	//A = 0;
 	//B = 1;
