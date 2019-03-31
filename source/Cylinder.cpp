@@ -41,5 +41,6 @@ HitRecord Cylinder::findClosestIntersection(const Ray & ray)
 
     }
 
+    
     return hr;
 }
