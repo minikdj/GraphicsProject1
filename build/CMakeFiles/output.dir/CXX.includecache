@@ -9,8 +9,6 @@
 ../source/headers/Cylinder.h
 QuadricSurface.h
 ../source/headers/QuadricSurface.h
-Plane.h
-../source/headers/Plane.h
 
 ../source/headers/Defines.h
 iostream
@@ -42,85 +40,23 @@ glm/gtx/quaternion.hpp
 glm/gtx/euler_angles.hpp
 -
 
-../source/headers/Ellipsoid.h
-QuadricSurface.h
-../source/headers/QuadricSurface.h
-
-../source/headers/FrameBuffer.h
-Defines.h
-../source/headers/Defines.h
-Lights.h
-../source/headers/Lights.h
-
 ../source/headers/HitRecord.h
 Defines.h
 ../source/headers/Defines.h
 Material.h
 ../source/headers/Material.h
 
-../source/headers/Lights.h
-Defines.h
-../source/headers/Defines.h
-HitRecord.h
-../source/headers/HitRecord.h
-Surface.h
-../source/headers/Surface.h
-Ray.h
-../source/headers/Ray.h
-
 ../source/headers/Material.h
 Defines.h
 ../source/headers/Defines.h
 
-../source/headers/Plane.h
-Surface.h
-../source/headers/Surface.h
-
 ../source/headers/QuadricSurface.h
 Surface.h
 ../source/headers/Surface.h
-
-../source/headers/RasterUser.h
-time.h
--
-RayTracer.h
-../source/headers/RayTracer.h
-Sphere.h
-../source/headers/Sphere.h
-Plane.h
-../source/headers/Plane.h
-Cylinder.h
-../source/headers/Cylinder.h
-Ellipsoid.h
-../source/headers/Ellipsoid.h
-QuadricSurface.h
-../source/headers/QuadricSurface.h
-SimplePolygon.h
-../source/headers/SimplePolygon.h
 
 ../source/headers/Ray.h
 Defines.h
 ../source/headers/Defines.h
-
-../source/headers/RayTracer.h
-FrameBuffer.h
-../source/headers/FrameBuffer.h
-Lights.h
-../source/headers/Lights.h
-HitRecord.h
-../source/headers/HitRecord.h
-Surface.h
-../source/headers/Surface.h
-Ray.h
-../source/headers/Ray.h
-
-../source/headers/SimplePolygon.h
-Plane.h
-../source/headers/Plane.h
-
-../source/headers/Sphere.h
-Surface.h
-../source/headers/Surface.h
 
 ../source/headers/Surface.h
 HitRecord.h
@@ -133,10 +69,6 @@ Material.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Cylinder.cpp
 Cylinder.h
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/Cylinder.h
-
-/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.cpp
-RasterUser.h
-/Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/Lab5/source/RasterUser.h
 
 /Users/danminik/Desktop/School/SeniorYear/Spring/CSE287/Labs/glm/glm/./detail/_noise.hpp
 ../common.hpp

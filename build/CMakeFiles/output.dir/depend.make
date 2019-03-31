@@ -5,7 +5,6 @@ CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/Cylinder.h
 CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/Defines.h
 CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/HitRecord.h
 CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/Material.h
-CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/Plane.h
 CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/QuadricSurface.h
 CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/Ray.h
 CMakeFiles/output.dir/source/Cylinder.cpp.o: ../source/headers/Surface.h

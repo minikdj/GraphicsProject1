@@ -1,5 +1,4 @@
 #include "QuadricSurface.h"
-#include "Plane.h"
 
 class Cylinder : public QuadricSurface
 {
