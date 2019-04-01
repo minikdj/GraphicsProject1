@@ -76,12 +76,15 @@ struct PositionalLight : public LightSource
                                 / glm::length(lightPosition - closestHit.interceptPoint);
             dvec3 reflectionVec = glm::normalize(glm::reflect(lightDirection, closestHit.surfaceNormal));
 
-            totalLight += glm::max(glm::dot(lightDirection, closestHit.surfaceNormal), 0.0) *
-                      diffuseLightColor * closestHit.material.diffuseColor;
-            totalLight += glm::pow(glm::max(0.0, glm::dot(reflectionVec, eyeVector)),
-                       closestHit.material.shininess) * specularLightColor * closestHit.material.specularColor;
-            totalLight += LightSource::illuminate(eyeVector, closestHit, surfaces);
-
+            Ray shadow(closestHit.interceptPoint + (EPSILON * closestHit.surfaceNormal), (lightDirection));
+            HitRecord hr = findIntersection(shadow, surfaces);
+            if (hr.t == FLT_MAX){
+                totalLight += glm::max(glm::dot(lightDirection, closestHit.surfaceNormal), 0.0) *
+                          diffuseLightColor * closestHit.material.diffuseColor;
+                totalLight += glm::pow(glm::max(0.0, glm::dot(reflectionVec, eyeVector)),
+                         closestHit.material.shininess) * specularLightColor * closestHit.material.specularColor;
+                totalLight += LightSource::illuminate(eyeVector, closestHit, surfaces);
+            } 
             return totalLight;
         }
         return totalLight;
@@ -111,18 +114,23 @@ struct DirectionalLight : public LightSource
         if (enabled) {
             color totalLight = closestHit.material.emissiveColor;
             dvec3 reflectionVec = glm::normalize(glm::reflect(lightDirection, closestHit.surfaceNormal));
+            
+            Ray shadow(closestHit.interceptPoint + (EPSILON * closestHit.surfaceNormal), (lightDirection));
+            HitRecord hr = findIntersection(shadow, surfaces);
+            if (hr.t == FLT_MAX){
 
-            //ambient
-            totalLight += (LightSource::illuminate(eyeVector, closestHit, surfaces));
+                //ambient
+                totalLight += (LightSource::illuminate(eyeVector, closestHit, surfaces));
 
-            //diffuse
-            totalLight += glm::max(glm::dot(lightDirection, closestHit.surfaceNormal), 0.0) *
+                //diffuse
+                totalLight += glm::max(glm::dot(lightDirection, closestHit.surfaceNormal), 0.0) *
                           diffuseLightColor * closestHit.material.diffuseColor;
 
-            // specular color
-            totalLight += glm::pow(glm::max(0.0, glm::dot(reflectionVec, eyeVector)),
+                // specular color
+                totalLight += glm::pow(glm::max(0.0, glm::dot(reflectionVec, eyeVector)),
                          closestHit.material.shininess) * specularLightColor * closestHit.material.specularColor;
-                return totalLight;
+            }  
+            return totalLight;
         }
         return BLACK;
 	}

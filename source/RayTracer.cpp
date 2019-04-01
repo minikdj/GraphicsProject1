@@ -77,7 +77,7 @@ void RayTracer::raytraceScene(const SurfaceVector & surfaces, const LightVector 
 
 color RayTracer::traceIndividualRay(const Ray & viewRay, int recursionLevel)
 {
-    if (recursionLevel <= 0) {
+    if (recursionLevel < 0) {
         return BLACK;
     }
     HitRecord closest = HitRecord();

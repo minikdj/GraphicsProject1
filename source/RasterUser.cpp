@@ -60,7 +60,7 @@ static void ResizeCB(int width, int height)
 
 	rayTrace.setCameraFrame( dvec3( 0, 0, 0 ), dvec3( 0, 0, -1 ), dvec3( 0, 1, 0 ) );
 
-	rayTrace.calculatePerspectiveViewingParameters(30.0);
+	rayTrace.calculatePerspectiveViewingParameters(45.0);
 
 	// Signal the operating system to re-render the window
 	glutPostRedisplay();
