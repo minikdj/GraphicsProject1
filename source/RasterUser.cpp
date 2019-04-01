@@ -173,10 +173,10 @@ void buildScene()
 
     shared_ptr<SimplePolygon> polygon = make_shared<SimplePolygon>(polygonVector, RED);
     shared_ptr<Ellipsoid> ellipsoid = make_shared<Ellipsoid>(dvec3(-3.0, 0.0, -10.0), BLACK, 1, 2, 2);
-    shared_ptr<Cylinder> cylinder = make_shared<Cylinder>(dvec3(2.7, 0.8, -10.0), GREEN, 1, 2 );
-	shared_ptr<Sphere> redBall = make_shared<Sphere>(dvec3( 0.0, 0.0, -10.0 ), 1.5, RED);
-	shared_ptr<Sphere> blueBall = make_shared<Sphere>(dvec3( -2.0, 1.0, -10.0 ), 0.5, BLUE);
-	shared_ptr<Sphere> whiteBall = make_shared<Sphere>(dvec3( -1.8, -1.0, -10.0 ), 0.5, WHITE);
+    shared_ptr<Cylinder> cylinder = make_shared<Cylinder>(dvec3(2.7, 2.8, -10.0), GREEN, 1, 2 );
+	shared_ptr<Sphere> redBall = make_shared<Sphere>(dvec3( 0.0, -1.0, -10.0 ), 1.5, RED);
+	shared_ptr<Sphere> blueBall = make_shared<Sphere>(dvec3( -1.5, 0.25, -8.0 ), 0.5, BLUE);
+	shared_ptr<Sphere> whiteBall = make_shared<Sphere>(dvec3( 1.5, 0.25, -8.0 ), 0.5, WHITE);
 	shared_ptr<Plane> plane = make_shared<Plane>(dvec3(0, -20.0, 0.0), dvec3(0, 1, 0), WHITE);
     redBall->material = redMat;    
     
