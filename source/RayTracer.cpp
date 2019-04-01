@@ -68,7 +68,7 @@ void RayTracer::raytraceScene(const SurfaceVector & surfaces, const LightVector 
         for(int j = 0; j < colorBuffer.getWindowHeight(); j++) {
             Ray ray;
             renderPerspectiveView == true ? ray = getPerspectiveViewRay(i, j) : ray = getOrthoViewRay(i, j); 
-            colorBuffer.setPixel(i, j, traceIndividualRay(ray, 0));
+            colorBuffer.setPixel(i, j, traceIndividualRay(ray, recursionDepth));
         }
     }
 } // end raytraceScene
@@ -77,16 +77,23 @@ void RayTracer::raytraceScene(const SurfaceVector & surfaces, const LightVector 
 
 color RayTracer::traceIndividualRay(const Ray & viewRay, int recursionLevel)
 {
+    if (recursionLevel <= 0) {
+        return BLACK;
+    }
     HitRecord closest = HitRecord();
     closest = findIntersection(viewRay, surfacesInScene);
 
     if (closest.t < FLT_MAX) {
         color total = BLACK;
+        Ray reflectRay = Ray(closest.interceptPoint + (EPSILON * closest.surfaceNormal), 
+                glm::reflect(viewRay.direct, closest.surfaceNormal)); 
+        total += 0.3 * RayTracer::traceIndividualRay(reflectRay, recursionLevel - 1);
+ 
         for (auto light : lightsInScene) {
             total += light->illuminate(viewRay.direct, closest, surfacesInScene);
             total += closest.material.emissiveColor;
         }
-        return total;
+       return total;
     }
     return (closest.t != FLT_MAX) ? closest.material.diffuseColor : defaultColor; 
 
